@@ -1,18 +1,16 @@
 package net.openbagtwo.eden_sea;
 
-import org.quiltmc.loader.api.ModContainer;
-import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
+import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class EdenSea implements ModInitializer {
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod name as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger("Eden Sea");
+  public static final String MOD_ID = "eden-sea";
+  public static final String MOD_NAME = "Eden Sea";
+  public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	@Override
-	public void onInitialize(ModContainer mod) {
-		LOGGER.info("Hello Quilt world from {}!", mod.metadata().name());
-	}
+  @Override
+  public void onInitialize() {
+	LOGGER.info("Initializing " + MOD_NAME);
+  }
 }

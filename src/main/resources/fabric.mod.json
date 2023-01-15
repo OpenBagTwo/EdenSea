@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "eden-sea",
+  "version": "${version}",
+  "name": "Eden Sea",
+  "description": "An Otherworldly Ocean Adventure",
+  "authors": [
+    "Gili \"OpenBagTwo\" Barlev"
+  ],
+  "contact": {
+    "homepage": "https://github.com/OpenBagTwo/EdenSea",
+    "sources": "https://github.com/OpenBagTwo/EdenSea",
+    "issues": "https://github.com/OpenBagTwo/EdenSea/issues"
+  },
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/eden_sea/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main":  ["net.openbagtwo.eden_sea.EdenSea"]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "edenring": "*"
+  }
+}
